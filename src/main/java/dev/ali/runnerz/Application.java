@@ -31,20 +31,6 @@ public class Application {
 	
 	
 	
-	@Bean
-	CommandLineRunner runner() {
-	    return args -> {
-	        Run run = new Run(
-	            1,
-	            "First Run",
-	            LocalDateTime.of(2021, 1, 1, 6, 0),
-	            LocalDateTime.of(2021, 1, 1, 7, 0),
-	            5,
-	            Location.OUTDOOR
-	        );
-
-	        log.info("Run: "+ run);
-	    };
-	}
+	
 
 }
