@@ -2,18 +2,21 @@ package dev.ali.runnerz;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
 
-import foo.bar.WelcomeMessage;
 
 @SpringBootApplication
 public class RunnerzApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(RunnerzApplication.class, args);
 		
 		
-		var welcomeMessage = new WelcomeMessage();
-		System.out.println(welcomeMessage.getWelcomeMessage());
+		
+		ConfigurableApplicationContext context =  SpringApplication.run(RunnerzApplication.class, args);
+		
+		WelcomeMessage  welcomeMessage = (WelcomeMessage) context.getBean("welcomeMessage");
+		System.out.println(welcomeMessage);
+		
 	}
 
 }

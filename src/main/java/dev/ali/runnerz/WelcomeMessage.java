@@ -1,4 +1,5 @@
-package foo.bar;
+package dev.ali.runnerz;
+
 
 import org.springframework.stereotype.Component;
 
