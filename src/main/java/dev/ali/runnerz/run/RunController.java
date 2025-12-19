@@ -11,7 +11,7 @@ public class RunController {
 	
 	@RequestMapping("/hello")
 	String home() {
-		return "Hello, Runnerz!";
+		return "Hello, Runnerz! ";
 	}
 	
 
