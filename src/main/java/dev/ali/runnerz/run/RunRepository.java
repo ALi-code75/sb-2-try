@@ -19,6 +19,11 @@ public class RunRepository {
 	}
 	
 	
+	Run findById(Integer id) {
+		return runs.stream().filter(run->run.id() == id).findFirst().get();
+	}
+	
+	
 	@PostConstruct
 	private void init() {
 	    runs.add(new Run(
