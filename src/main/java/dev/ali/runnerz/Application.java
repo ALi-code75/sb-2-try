@@ -17,10 +17,10 @@ import dev.ali.runnerz.run.Run;
 @SpringBootApplication
 public class Application {
 
+	private static final Logger log = LoggerFactory.getLogger(Application.class);
 	public static void main(String[] args) {
 		
 		
-		final Logger log = LoggerFactory.getLogger(Application.class);
 		
 		SpringApplication.run(Application.class, args);
 		
@@ -43,7 +43,7 @@ public class Application {
 	            Location.OUTDOOR
 	        );
 
-	        System.out.println(run);
+	        log.info("Run: "+ run);
 	    };
 	}
 
