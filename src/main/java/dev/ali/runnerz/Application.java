@@ -32,21 +32,23 @@ public class Application {
 	
 	
 	
-	@Bean
-	CommandLineRunner runner(RunRepository runRepository) {
-	    return args -> {
-	        Run run = new Run(
-	            1,
-	            "First Run",
-	            LocalDateTime.of(2021, 1, 1, 6, 0),
-	            LocalDateTime.of(2021, 1, 1, 7, 0),
-	            5,
-	            Location.OUTDOOR
-	        );
-	        runRepository.create(run);
-
-	        log.info("Run: "+ run);
-	    };
-	}
+//	@Bean
+//	CommandLineRunner runner(RunRepository runRepository) {
+//	    return args -> {
+//	        Run run = new Run(
+//	            1,
+//	            "First Run",
+//	            LocalDateTime.of(2021, 1, 1, 6, 0),
+//	            LocalDateTime.of(2021, 1, 1, 7, 0),
+//	            5,
+//	            Location.OUTDOOR
+//	        );
+//	        runRepository.create(run);
+//
+//	        log.info("Run: "+ run);
+//	    };
+//	}
+	
+	
 
 }
